@@ -1,0 +1,35 @@
+# GPS CONFIG FOR ASIA
+# Build by ioz9 for GPS Fix
+
+## NTP Time server, use a local one ##
+
+#NTP_SERVER=europe.pool.ntp.org
+?NTP_SERVER=[0123].cn.pool.ntp.org
+NTP_SERVER=asia.pool.ntp.org
+XTRA_SERVER_1=http://xtra1.gpsonextra.net/xtra.bin
+XTRA_SERVER_2=http://xtra2.gpsonextra.net/xtra.bin
+XTRA_SERVER_3=http://xtra3.gpsonextra.net/xtra.bin
+
+DEBUG_LEVEL=0
+
+# Intermediate positioning, 1=reduces accuracy, increases speed
+INTERMEDIATE_POS=0
+
+# Wiper (wifi positioning), 1=enable, 0=disable,better accuracy
+ENABLE_WIPER=1
+
+# SUPL AGPS
+SUPL_HOST=supl.google.com
+SUPL_PORT=7276
+SUPL_HOST=suplcn.sirf.com
+SUPL_PORT=7275
+
+#################################
+##### AGPS Carrier settings #####
+#################################
+CURRENT_CARRIER=common
+DEFAULT_AGPS_ENABLE=TRUE
+DEFAULT_SSL_ENABLE=FALSE
+
+# TRUE for "User Plane", FALSE for "Control Plane"
+DEFAULT_USER_PLANE=TRUE
